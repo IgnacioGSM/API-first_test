@@ -1,8 +1,8 @@
 from sqlmodel import SQLModel, Field
 
 class TaskBase(SQLModel):
-    title: str
-    description: str | None = None
+    title: str = Field(min_length=1, max_length=100)
+    description: str | None = Field(default=None, max_length=255)
     completed: bool = False
 
 class Task(TaskBase, table=True):

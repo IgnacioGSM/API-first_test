@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Mis tareas</h1>
+
+    <div class="form">
+        <input type="text" id="title" placeholder="Título">
+        <input type="text" id="description" placeholder="Descripción">
+        <button onclick="createTask()">Agregar</button>
+    </div>
+
+    <div id="taskList" class="task-container"></div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
