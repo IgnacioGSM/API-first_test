@@ -14,3 +14,8 @@ class Task(TaskBase, table=True):
 
 class TaskCreate(TaskBase):
     pass
+
+class TaskUpdate(SQLModel):
+    title: str | None = None
+    description: str | None = None
+    completed: bool | None = None
